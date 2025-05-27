@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Canteen</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"> 
+                     <img src="/logo/logo.png" alt="LOGO" width="100">
+                <h1>Mero Canteen</h1></div>
+                <p>Admin Panel</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    Orders
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🍽️</span>
+                    Menu Management
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⭐</span>
+                    Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    Students
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <span class="nav-icon">🚪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div>
+                        <h1>Admin Dashboard</h1>
+                        <p>Manage your canteen operations efficiently</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-outline">Export Data</button>
+                        <button class="btn btn-primary">Add Menu Item</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="admin-dashboard-grid">
+                <div class="stats-overview">
+                    <h2>Today's Overview</h2>
+                    <div class="stats-cards">
+                        <div class="stat-card">
+                            <div class="stat-icon">📋</div>
+                            <div class="stat-info">
+                                <h3>45</h3>
+                                <p>Total Orders</p>
+                            </div>
+                            <div class="stat-change positive">+12%</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">💰</div>
+                            <div class="stat-info">
+                                <h3>Rs.4,250</h3>
+                                <p>Revenue</p>
+                            </div>
+                            <div class="stat-change positive">+8%</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-info">
+                                <h3>38</h3>
+                                <p>Active Students</p>
+                            </div>
+                            <div class="stat-change positive">+5%</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⭐</div>
+                            <div class="stat-info">
+                                <h3>4.2</h3>
+                                <p>Avg Rating</p>
+                            </div>
+                            <div class="stat-change neutral">0%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-orders">
+                    <div class="section-header">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="view-all-link">View All →</a>
+                    </div>
+                    <div class="orders-table">
+                        <div class="table-header">
+                            <span>Order ID</span>
+                            <span>Student</span>
+                            <span>Items</span>
+                            <span>Amount</span>
+                            <span>Status</span>
+                            <span>Action</span>
+                        </div>
+                        <div class="table-row">
+                            <span class="order-id">#ORD-001</span>
+                            <span>Aditya Man Adhikari</span>
+                            <span>Chicken Momo</span>
+                            <span>Rs.100</span>
+                            <span class="status pending">Preparing</span>
+                            <button class="btn btn-small btn-primary">Update</button>
+                        </div>
+                        <div class="table-row">
+                            <span class="order-id">#ORD-002</span>
+                            <span>Prabhat Rai</span>
+                            <span>Thukpa</span>
+                            <span>Rs.80</span>
+                            <span class="status ready">Ready</span>
+                            <button class="btn btn-small btn-outline">Mark Delivered</button>
+                        </div>
+                        <div class="table-row">
+                            <span class="order-id">#ORD-003</span>
+                            <span>Suveksha Tamrakar</span>
+                            <span>Samosa</span>
+                            <span>Rs.120</span>
+                            <span class="status delivered">Delivered</span>
+                            <button class="btn btn-small btn-outline" disabled>Complete</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-management">
+                    <div class="section-header">
+                        <h2>Menu Management</h2>
+                        <button class="btn btn-primary">Add Item</button>
+                    </div>
+                    <div class="menu-items-list">
+                        <div class="menu-item-row">
+                            <div class="item-info">
+                                <div class="item-image-small"><img src="/image/momo.png" alt=""></div>
+                                <div>
+
+                                    <h4>Chicken Momo</h4>
+                                    <p>Rs.100 • Available</p>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn btn-small btn-outline">Edit</button>
+                                <button class="btn btn-small btn-outline">Toggle</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-row">
+                            <div class="item-info">
+                                <div class="item-image-small"><img src="image/chowmein.jpg" alt=""></div>
+                                <div>
+                                    <h4>Chowmein</h4>
+                                    <p>Rs.50 • Available</p>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn btn-small btn-outline">Edit</button>
+                                <button class="btn btn-small btn-outline">Toggle</button>
+                            </div>
+                        </div>
+                        <div class="menu-item-row">
+                            <div class="item-info">
+                                <div class="item-image-small"><img src="image/Chana masala.jpg" alt=""></div>
+                                <div>
+                                    <h4>Chana Chuira</h4>
+                                    <p>Rs.60 • Unavailable</p>
+                                </div>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn btn-small btn-outline">Edit</button>
+                                <button class="btn btn-small btn-primary">Enable</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quality-alerts">
+                    <h2>Quality Alerts</h2>
+                    <div class="alerts-list">
+                        <div class="alert-item critical">
+                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-content">
+                                <h4>Critical: Samosa Quality Issue</h4>
+                                <p>Multiple 1-star ratings received. Immediate attention required.</p>
+                                <span class="alert-time">2 hours ago</span>
+                            </div>
+                            <button class="btn btn-small btn-primary">Review</button>
+                        </div>
+                        <div class="alert-item warning">
+                            <div class="alert-icon">⚡</div>
+                            <div class="alert-content">
+                                <h4>Low Stock: Chiya Ingredients</h4>
+                                <p>Tea leaves and milk running low. Restock needed.</p>
+                                <span class="alert-time">4 hours ago</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Acknowledge</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

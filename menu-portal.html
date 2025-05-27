@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Canteen Portal - Canteen</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div  class="logo">
+                    <img src="/image/logo.png" alt="LOGO" width="100">
+                    <h1> Mero Canteen</h1>
+                    <p>Student Portal</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="student-dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">🛒</span>
+                    Order Food
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💳</span>
+                    Digital Wallet
+                </a>
+                <a href="reviews.html" class="nav-item">
+                    <span class="nav-icon">⭐</span>
+                    Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    Order History
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    Profile
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <span class="nav-icon">🚪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div>
+                        <h1>Digital Canteen Portal</h1>
+                        <p>Browse our delicious menu and place your order</p>
+                    </div>
+                    <div class="header-actions">
+                        <div class="cart-summary">
+                            <span class="cart-items">3 items</span>
+                            <span class="cart-total">Rs.260</span>
+                        </div>
+                        <button class="btn btn-primary">View Cart</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="menu-container">
+                <div class="menu-filters">
+                    <div class="filter-tabs">
+                        <button class="filter-tab active">All Items</button>
+                        <button class="filter-tab">Breakfast</button>
+                        <button class="filter-tab">Lunch</button>
+                        <button class="filter-tab">Snacks</button>
+                        <button class="filter-tab">Beverages</button>
+                        <button class="filter-tab">Desserts</button>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for food items...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="menu-grid">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/samosa.jpg" width="360" alt="" ></div>
+                            <div class="item-badge">Popular</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Samosa</h3>
+                            <p class="item-description">A crispy and spicy deep fried snack that has an crisp and flaky outer layer made of maida and rich filling of mashed potato, peas and spices</p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(124 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.120</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/thukpa.png" width="360" alt="" ></div>
+                            <div class="item-badge veg">Veg</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Thukpa</h3>
+                            <p class="item-description">A Himalayan noodle alsosoup Vegetable thukpa, a soup made with noodles, fresh vegetables, and broth, is a favorite dish during the Tibetan New Year</p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(89 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.80</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/Chana masala.jpg" width="360" alt="" ></div>
+                            <div class="item-badge veg">Veg</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chana Chuira</h3>
+                            <p class="item-description">Chiura, a type of flattened rice, is often rehydrated and then combined with cooked or roasted chana, along with other ingredients like spices, herbs, and a tangy sauce. </p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(156 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.60</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/momo.png" width="360" alt="" ></div>
+                            <div class="item-badge">New</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Momo</h3>
+                            <p class="item-description">Steamed dumplings typically made with a thin dough wrapper filled with a savory mixture of ground chicken, onions, garlic, ginger, cilantro, and a blend of traditional Nepali spices.</p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(67 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.100</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/chowmein.jpg" width="360" alt="" ></div>
+                            <div class="item-badge veg">Veg</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chowmein</h3>
+                            <p class="item-description">A popular Indo-Chinese dish called Veg Chowmein is a celebration of flavours and textures. It has perfectly cooked noodles and a variety of colourful vegetables</p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(203 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.50</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <div class="image-placeholder"><img src="image/Chai-1-scaled.jpg" width="360" alt="" ></div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chiya</h3>
+                            <p class="item-description"> a traditional milk tea enjoyed throughout Nepal and South Asia. It's a spiced tea that's typically brewed with black tea, milk, and a blend of spices.</p>
+                            <div class="item-rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(312 reviews)</span>
+                            </div>
+                            <div class="item-footer">
+                                <span class="item-price">Rs.20</span>
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

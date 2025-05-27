@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - MeroCanteen</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div> <img src="/logo/logo.png" alt="LOGO" width="100">
+                <h1>Mero Canteen</h1></div>
+                <p>Student Portal</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    Dashboard
+                </a>
+                <a href="menu-portal.html" class="nav-item">
+                    <span class="nav-icon">🛒</span>
+                    Order Food
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💳</span>
+                    Digital Wallet
+                </a>
+                <a href="reviews.html" class="nav-item">
+                    <span class="nav-icon">⭐</span>
+                    Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    Order History
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    Profile
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <span class="nav-icon">🚪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div>
+                        <h1>Welcome back, Anish!</h1>
+                        <p>Ready for your next meal?</p>
+                    </div>
+                    <div class="header-actions">
+                        <div class="wallet-balance">
+                            <span class="balance-label">Wallet Balance</span>
+                            <span class="balance-amount">Rs.450.00</span>
+                        </div>
+                        <button class="btn btn-primary">Add Money</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="dashboard-grid">
+                <div class="quick-actions">
+                    <h2>Quick Actions</h2>
+                    <div class="action-cards">
+                        <a href="menu-portal.html" class="action-card">
+                            <div class="action-icon">🛒</div>
+                            <h3>Digital Canteen Portal</h3>
+                            <p>Browse menu and place orders</p>
+                            <span class="action-arrow">→</span>
+                        </a>
+                        <a href="reviews.html" class="action-card">
+                            <div class="action-icon">⭐</div>
+                            <h3>Canteen Reviews</h3>
+                            <p>Rate and review your meals</p>
+                            <span class="action-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="recent-orders">
+                    <h2>Recent Orders</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>Chana Chuira</h4>
+                                <p>Today, 12:30 PM</p>
+                            </div>
+                            <div class="order-status">
+                                <span class="status delivered">Delivered</span>
+                                <span class="order-price">Rs.50</span>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>Chowmein</h4>
+                                <p>Yesterday, 1:15 PM</p>
+                            </div>
+                            <div class="order-status">
+                                <span class="status delivered">Delivered</span>
+                                <span class="order-price">Rs.80</span>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-info">
+                                <h4>Thukpa</h4>
+                                <p>2 days ago, 8:30 AM</p>
+                            </div>
+                            <div class="order-status">
+                                <span class="status delivered">Delivered</span>
+                                <span class="order-price">Rs.60</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-all-link">View All Orders →</a>
+                </div>
+                
+                <div class="wallet-section">
+                    <h2>Digital Wallet</h2>
+                    <div class="wallet-card">
+                        <div class="wallet-header">
+                            <h3>Current Balance</h3>
+                            <span class="wallet-amount">Rs.450.00</span>
+                        </div>
+                        <div class="wallet-actions">
+                            <button class="btn btn-outline">Add Money</button>
+                            <button class="btn btn-outline">Transaction History</button>
+                        </div>
+                    </div>
+                    <div class="recent-transactions">
+                        <h4>Recent Transactions</h4>
+                        <div class="transaction-item">
+                            <span class="transaction-desc">Chana Chuira</span>
+                            <span class="transaction-amount debit">-Rs.60</span>
+                        </div>
+                        <div class="transaction-item">
+                            <span class="transaction-desc">Wallet Recharge</span>
+                            <span class="transaction-amount credit">+Rs.500</span>
+                        </div>
+                        <div class="transaction-item">
+                            <span class="transaction-desc">Samosa</span>
+                            <span class="transaction-amount debit">-Rs.50</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notifications">
+                    <h2>Notifications</h2>
+                    <div class="notification-list">
+                        <div class="notification-item">
+                            <div class="notification-icon">🍕</div>
+                            <div class="notification-content">
+                                <h4>New Menu Item</h4>
+                                <p>Samosa Chat is now available!</p>
+                                <span class="notification-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-icon">💰</div>
+                            <div class="notification-content">
+                                <h4>Wallet Recharged</h4>
+                                <p>Rs.500 added to your wallet</p>
+                                <span class="notification-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-icon">⭐</div>
+                            <div class="notification-content">
+                                <h4>Review Reminder</h4>
+                                <p>Rate your recent order</p>
+                                <span class="notification-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

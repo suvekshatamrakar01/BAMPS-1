@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Reviews - Canteen</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="reviews.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div> <img src="/logo/logo.png" alt="LOGO" width="100">
+                <h1>Mero Canteen</h1></div>
+                <p>Student Portal</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="student-dashboard.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    Dashboard
+                </a>
+                <a href="menu-portal.html" class="nav-item">
+                    <span class="nav-icon">🛒</span>
+                    Order Food
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💳</span>
+                    Digital Wallet
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">⭐</span>
+                    Reviews
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📋</span>
+                    Order History
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    Profile
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <span class="nav-icon">🚪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div>
+                        <h1>Canteen Reviews</h1>
+                        <p>Share your dining experience and help improve our services</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-primary">Write Review</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="reviews-container">
+                <div class="review-form-section">
+                    <div class="review-form-card">
+                        <h2>Write a Review</h2>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <label for="foodItem">Food Item</label>
+                                <select id="foodItem" name="foodItem" required>
+                                    <option value="">Select food item you want to review</option>
+                                    <option value="">Samosa</option>
+                                    <option value="thukpa">Thukpa</option>
+                                    <option value="chana-chuira">Chana Chuira</option>
+                                    <option value="chicken-momo">Chicken Momo</option>
+                                    <option value="chowmein">Chowmein</option>
+                                    <option value="chiya">Chiya</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5" class="star">⭐</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4" class="star">⭐</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3" class="star">⭐</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2" class="star">⭐</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1" class="star">⭐</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reviewTitle">Review Title</label>
+                                <input type="text" id="reviewTitle" name="reviewTitle" placeholder="Give your review a title" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reviewText">Your Review</label>
+                                <textarea id="reviewText" name="reviewText" rows="4" placeholder="Share your experience with this food item..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="reviews-list-section">
+                    <div class="reviews-stats">
+                        <h2>Overall Ratings</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">4.2</div>
+                                <div class="stat-label">Average Rating</div>
+                                <div class="stat-stars">⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">1,247</div>
+                                <div class="stat-label">Total Reviews</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">89%</div>
+                                <div class="stat-label">Satisfaction Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <h2>Recent Reviews</h2>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">👤</div>
+                                    <div>
+                                        <h4>Aditya Man Adhikari</h4>
+                                        <p>2 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Excellent Chana Chuira!</h3>
+                                <p>The chana chuira was absolutely delicious. Perfect blend of spices and the chuira was tender. Definitely ordering again!</p>
+                                <div class="review-food-item">Chana Chuira</div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">👤</div>
+                                    <div>
+                                        <h4>Sankalpa Niraula</h4>
+                                        <p>3 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Good value for money</h3>
+                                <p>The chicken momo was filling and tasty. Good portion size and variety of items. Could use a bit more seasoning in the achar.</p>
+                                <div class="review-food-item">Chicken Momo</div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item warning">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">👤</div>
+                                    <div>
+                                        <h4>Suveksha Tamrakar</h4>
+                                        <p>1 week ago</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">⭐</div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Disappointing experience</h3>
+                                <p>The samosas were cold and the filling was bland. Not worth the price. Hope the quality improves.</p>
+                                <div class="review-food-item">Samosa</div>
+                                <div class="quality-alert">
+                                    ⚠️ Quality Alert: This item has received multiple 1-star ratings. Administration has been notified.
+                                </div>
+                            </div>                                                                                                                              
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">👤</div>
+                                    <div>
+                                        <h4>Anish Gelal</h4>
+                                        <p>1 week ago</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Perfect Chowmein!</h3>
+                                <p>Crispy chowmein with perfectly spiced onion in it. The chutneys were fresh and flavorful. Best chowmein in the campus!</p>
+                                <div class="review-food-item">Chowmein</div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">👤</div>
+                                    <div>
+                                        <h4>Prabhat Rai</h4>
+                                        <p>2 weeks ago</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating">⭐⭐⭐</div>
+                            </div>
+                            <div class="review-content">
+                                <h3>Average chiya</h3>
+                                <p>The chiya was okay, nothing special. Could be stronger and more flavorful. Service was quick though.</p>
+                                <div class="review-food-item">Chiya</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

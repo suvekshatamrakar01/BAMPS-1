@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Dashboard - Canteen</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="super-admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div> <img src="/logo/logo.png" alt="LOGO" width="100">
+                <h1>Mero Canteen</h1><div></div>
+                <p>Super Admin</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🏫</span>
+                    Colleges
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    Admins
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    Analytics
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">💰</span>
+                    Revenue
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    System Settings
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn">
+                    <span class="nav-icon">🚪</span>
+                    Logout
+                </a>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="dashboard-header">
+                <div class="header-content">
+                    <div>
+                        <h1>Super Admin Dashboard</h1>
+                        <p>Manage all college canteens from one central location</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-outline">Generate Report</button>
+                        <button class="btn btn-primary">Add College</button>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="super-admin-grid">
+                <div class="system-overview">
+                    <h2>System Overview</h2>
+                    <div class="overview-cards">
+                        <div class="overview-card">
+                            <div class="card-icon">🏫</div>
+                            <div class="card-info">
+                                <h3>24</h3>
+                                <p>Active Colleges</p>
+                            </div>
+                            <div class="card-trend positive">+3 this month</div>
+                        </div>
+                        <div class="overview-card">
+                            <div class="card-icon">👥</div>
+                            <div class="card-info">
+                                <h3>12,450</h3>
+                                <p>Total Students</p>
+                            </div>
+                            <div class="card-trend positive">+245 this week</div>
+                        </div>
+                        <div class="overview-card">
+                            <div class="card-icon">💰</div>
+                            <div class="card-info">
+                                <h3>Rs.24,500</h3>
+                                <p>Monthly Revenue</p>
+                            </div>
+                            <div class="card-trend positive">+15% vs last month</div>
+                        </div>
+                        <div class="overview-card">
+                            <div class="card-icon">📋</div>
+                            <div class="card-info">
+                                <h3>1,250</h3>
+                                <p>Daily Orders</p>
+                            </div>
+                            <div class="card-trend positive">+8% vs yesterday</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="colleges-management">
+                    <div class="section-header">
+                        <h2>College Management</h2>
+                        <button class="btn btn-primary">Add New College</button>
+                    </div>
+                    <div class="colleges-table">
+                        <div class="table-header">
+                            <span>College Name</span>
+                            <span>Location</span>
+                            <span>Students</span>
+                            <span>Revenue</span>
+                            <span>Status</span>
+                            <span>Actions</span>
+                        </div>
+                        <div class="table-row">
+                            <div class="college-info">
+                                <h4>Koshi Saint James College</h4>
+                                <p>Established 1998</p>
+                            </div>
+                            <span>Itahari, Nepal</span>
+                            <span>2,450</span>
+                            <span>Rs. 45,000</span>
+                            <span class="status active">Active</span>
+                            <div class="action-buttons">
+                                <button class="btn btn-small btn-outline">Edit</button>
+                                <button class="btn btn-small btn-outline">View</button>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="college-info">
+                                <h4>Kathmandu Model College</h4>
+                                <p>Established 1995</p>
+                            </div>
+                            <span>Kathmandu, Nepal</span>
+                            <span>3,200</span>
+                            <span>Rs. 62,000</span>
+                            <span class="status active">Active</span>
+                            <div class="action-buttons">
+                                <button class="btn btn-small btn-outline">Edit</button>
+                                <button class="btn btn-small btn-outline">View</button>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="college-info">
+                                <h4>Public College</h4>
+                                <p>Established 2004 </p>
+                            </div>
+                            <span>Dharan, Nepal</span>
+                            <span>1,800</span>
+                            <span>Rs. 38,000</span>
+                            <span class="status inactive">Inactive</span>
+                            <div class="action-buttons">
+                                <button class="btn btn-small btn-primary">Activate</button>
+                                <button class="btn btn-small btn-outline">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="add-college-form">
+                    <h2>Add New College</h2>
+                    <form class="college-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="collegeName">College Name</label>
+                                <input type="text" id="collegeName" name="collegeName" placeholder="Enter college name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="collegeCode">College Code</label>
+                                <input type="text" id="collegeCode" name="collegeCode" placeholder="e.g., MIT001" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" placeholder="City, State/Country" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Contact Email</label>
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="admin@college.edu" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="adminName">Admin Name</label>
+                                <input type="text" id="adminName" name="adminName" placeholder="Primary admin name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adminEmail">Admin Email</label>
+                                <input type="email" id="adminEmail" name="adminEmail" placeholder="admin@college.edu" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description" rows="3" placeholder="Brief description about the college"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" data-original-text="Add College">Add College</button>
+                    </form>
+                </div>
+                
+                <div class="system-alerts">
+                    <h2>System Alerts</h2>
+                    <div class="alerts-container">
+                        <div class="alert-item high">
+                            <div class="alert-indicator"></div>
+                            <div class="alert-content">
+                                <h4>Server Maintenance Required</h4>
+                                <p>Scheduled maintenance for database optimization</p>
+                                <span class="alert-time">2 hours ago</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Schedule</button>
+                        </div>
+                        <div class="alert-item medium">
+                            <div class="alert-indicator"></div>
+                            <div class="alert-content">
+                                <h4>New College Registration</h4>
+                                <p>Kasturi College has requested to join the platform</p>
+                                <span class="alert-time">5 hours ago</span>
+                            </div>
+                            <button class="btn btn-small btn-primary">Review</button>
+                        </div>
+                        <div class="alert-item low">
+                            <div class="alert-indicator"></div>
+                            <div class="alert-content">
+                                <h4>Monthly Report Generated</h4>
+                                <p>Revenue and analytics report for November 2024</p>
+                                <span class="alert-time">1 day ago</span>
+                            </div>
+                            <button class="btn btn-small btn-outline">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

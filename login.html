@@ -3,42 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Canteen</title>
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- login form -->
-    <div class="background-page">
-        <div class="form-container">
-            <div class="form-box">
-                <h2>Login</h2>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="college">Choose your College:</label>
-                        <select name="college" id="college">
-                            <option value="college1">Select your College</option>
-                            <option value="college2">Koshi Saint James College</option>
-                            <option value="college3"></option>
-                            <option value="college4">Kathmandu Model College</option>
-                        </select>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+
+                <div  class="logo">
+                    <img src="/logo/logo.png" alt="LOGO" width="100">
+                    <h1> Mero Canteen</h1>
+                </div>
+                <h2>Welcome Back</h2>
+                <p>Sign in to your account to continue</p>
+            </div>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userType">Login As</label>
+                    <select id="userType" name="userType" required>
+                        <option value="">Select User Type</option>
+                        <option value="student">Student</option>
+                        <option value="admin">Admin</option>
+                        <option value="superadmin">Super Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+
+        <div class="auth-visual">
+            <div class="visual-content">
+                <h3>Smart Canteen Management</h3>
+                <p>Access your personalized dashboard and manage your college dining experience efficiently.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">🛒</span>
+                        <span>Quick Food Ordering</span>
                     </div>
-                    <div class="form-group">
-                        <label for="login-email">Email Address</label>
-                        <input type="email" id="login-email" name="email" placeholder="Your email address" required>
+                    <div class="feature-item">
+                        <span class="feature-icon">💳</span>
+                        <span>Digital Wallet</span>
                     </div>
-                    <div class="form-group">
-                        <label for="login">Password</label>
-                        <input type="password" id="login-password" name="password" placeholder="Create a password"
-                            required>
+                    <div class="feature-item">
+                        <span class="feature-icon">⭐</span>
+                        <span>Review & Rating</span>
                     </div>
-                    <button type="submit">Sign Up</button>
-                </form>
-                <p>You dont have an account?<a href="signup.html">Signup here</a></p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

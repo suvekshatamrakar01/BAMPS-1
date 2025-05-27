@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Canteen</title>
+    <link rel="stylesheet" href="auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--This is a header section-->
-    <header>
-        <nav class="nav">
-            <ul class="nav_ul">
-                <li class="nav_li1">
-                    <a href="/" class="nav-link">
-                        <img src="https://cdn.pixabay.com/photo/2014/04/02/10/59/bow-305121_640.png" alt="navlogo"
-                            height="50" class="navlogo" />
-                    </a>
-                </li>
-                <li class="nav_li2"><a href="./index.html">Home</a></li>
-                <li class="nav_li3"><a href="./product.html">Product</a></li>
-                <li class="nav_li4"><a href="./about.html">About</a></li>
-                <li class="nav_li5"><a href="./contactus.html">Contact</a></li>
-                <li class="search nav_li6">
-                    <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_640.png"
-                        alt="search" class="search" height="20" />
-                    <input type="search" name="search" id="search" />
-                </li>
-                <li class="btn nav_li7 signin">
-                    <a href="signup.html">signup</a>
-                </li>
-                <li class="btn nav_li8 login">
-                    <a href="./login.html">login</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- signup -->
-     <!-- signup page  -->
-  <div class="background-page">
-    <div class="form-container">
-        <div class="form-box">
-            <h2>Sign Up</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="signup-name">Full Name</label>
-                    <input type="text" id="signup-name" name="name" placeholder="Your full name" required>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo"><img src="/logo/logo.png" alt="LOGO" width="100">
+                <h1> Mero Canteen</h1></div>
+                <h2>Create Account</h2>
+                <p>Join our smart canteen management system</p>
+            </div>
+            
+            <form class="auth-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
                 </div>
+                
                 <div class="form-group">
-                    <label for="signup-email">Email Address</label>
-                    <input type="email" id="signup-email" name="email" placeholder="Your email address" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="signup-password">Password</label>
-                    <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="signup-phone">Phone Number</label>
-                    <input type="tel" id="signup-phone" name="phone" placeholder="Your phone number" required>
+                    <label for="college">College</label>
+                    <select id="college" name="college" required>
+                        <option value="">Select Your College</option>
+                        <option value="koshi">Koshi Saint James</option>
+                        <option value="kathmandu">Kathmandu Model College</option>
+                        <option value="public">Public College</option>
+                    </select>
                 </div>
-                <button type="submit">Sign Up</button>
+                
+                <div class="form-group">
+                    <label for="studentId">Student/Employee ID</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms & Conditions</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
             </form>
-            <div class="text1">
-                <p>Already have an account? <a href="login.html">Login here</a></p>
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Sign in here</a></p>
+                <a href="index.html" class="back-link">← Back to Home</a>
             </div>
         </div>
-    </div>
+        
+        <div class="auth-visual">
+            <div class="visual-content">
+                <h3>Join Our Community</h3>
+                <p>Get access to smart dining features and become part of the digital canteen revolution.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <span class="feature-icon">🎓</span>
+                        <span>Student-Friendly Interface</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <span>Secure & Private</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>Fast & Efficient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-
-     <!-- footer -->
-     <footer>
-        <div class="footer">
-            <div class="footer1">
-                <h4>Help</h4>
-                <p>Support Us</p>
-                <p>FAQ's</p>
-                <p>Terms and Conditions</p>
-                <p>Privacy Policy</p>
-            </div>
-            <div class="footer2">
-                <h4>Company</h4>
-                <p><a href="/">Home</a></p>
-                <p><a href="/contactus.html">Contact</a></p>
-                <p><a href="/product.html">Product</a></p>
-                <p><a href="/about.html">About</a></p>
-            </div>
-
-            <div class="footer3">
-                <h4>Social Media</h4>
-                <div class="ftr1" style="padding-bottom: 15px;">
-                    <img src="./img/facebook-logo.png" alt="facebook" class="icn icnFb" height="25" />
-                    <img src="./img/instagram-logo.png" alt="instagram" class="icn icnIg" height="25" />
-                    <img src="./img/twitter-logo.png" alt="twitter" class="icn icnTw" height="25" />
-                </div>
-                <div class="ftr2">
-                    <img src="https://cdn.pixabay.com/photo/2014/04/02/10/59/bow-305121_640.png" alt="footerLogo" height="40" />
-                </div>
-
-            </div>
-
-        </div>
-    </footer>
+    <style>
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .terms-link {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+        
+        .terms-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
 </body>
-
 </html>
